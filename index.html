@@ -12,12 +12,34 @@
         render: function() {
           return (
             <div className="commentBox">
-              Yo dawg, feed me comments.
+              <h1>Comments by humans</h1>
+              <CommentList />
+              <CommentForm />
             </div>
           );
         }
       });
-      
+
+      var CommentList = React.createClass({
+        render: function() {
+          return (
+            <div className="commentList">
+              I'm a comment list!
+            </div>
+          );
+        }
+      });
+
+      var CommentForm = React.createClass({
+        render: function() {
+          return (
+            <div className="commentForm">
+              I'm a comment form!
+            </div>
+          );
+        }
+      });
+
       React.render(<CommentBox />, document.getElementById('content'));
     </script>
   </body>
