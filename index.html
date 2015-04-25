@@ -24,7 +24,8 @@
         render: function() {
           return (
             <div className="commentList">
-              I'm a comment list!
+              <Comment author="Peter Jackson">I hated this book. The movie was way better.</Comment>
+              <Comment author="Roger Ebert">I'm dead yo. Five stars nontheless</Comment>
             </div>
           );
         }
@@ -51,7 +52,8 @@
             </div>
           );
         }
-      })
+      });
+
       React.render(<CommentBox />, document.getElementById('content'));
     </script>
   </body>
