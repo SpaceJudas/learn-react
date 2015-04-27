@@ -21,12 +21,15 @@
         }
       });
 
+      var commentData = [
+        {author: "Peter Jackson", text: "I hated this book. The movie was way better."},
+        {author: "Roger Ebert", text: "I'm dead yo. *Five* stars nontheless"}
+      ]
+
       var CommentList = React.createClass({
         render: function() {
           return (
             <div className="commentList">
-              <Comment author="Peter Jackson">I hated this book. The movie was way better.</Comment>
-              <Comment author="Roger Ebert">I'm dead yo. *Five* stars nontheless</Comment>
             </div>
           );
         }
